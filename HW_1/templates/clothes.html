@@ -1,0 +1,17 @@
+{% extends 'index_shop.html' %}
+
+{% block title %}
+Clothes
+{% endblock %}
+
+
+{% block content %}
+{%for clothes in clothes_list%}
+<div class="clothes">
+    <h1>{{clothes.title}}</h1>
+    <p>{{clothes.description}}</p>
+    <a class="nav-link active" aria-current="page" href="{{ url_for('jacket') }}">Куртка</a>
+
+</div>
+{%endfor%}
+{% endblock %}

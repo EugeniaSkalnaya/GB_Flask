@@ -1,0 +1,17 @@
+{% extends 'index_shop.html' %}
+
+{% block title %}
+Shoes
+{% endblock %}
+
+
+{% block content %}
+
+{%for shoes in shoes_list%}
+<div class="shoes">
+    <h1>{{shoes.title}}</h1>
+    <p>{{shoes.description}}</p>
+</div>
+{%endfor%}
+
+{% endblock %}
